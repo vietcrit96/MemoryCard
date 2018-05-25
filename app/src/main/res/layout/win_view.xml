@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time out!"
+        android:textAllCaps="true"
+        android:textColor="@color/orange"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/time_text"
+        android:layout_marginLeft="11dp"
+        android:gravity="center"
+        android:text="time left : "
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/score_text"
+        android:layout_marginLeft="11dp"
+        android:gravity="center"
+        android:text="score :  "
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/star_1"
+        android:layout_marginLeft="11dp"
+        android:gravity="center"
+        android:text="star :  "
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin_bot_button"
+        android:layout_marginLeft="@dimen/margin_leftright_button"
+        android:src="@drawable/button_back" />
+
+    <ImageView
+        android:id="@+id/button_again"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_bot_button"
+        android:layout_marginRight="@dimen/margin_leftright_button"
+        android:src="@drawable/button_again" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="@dimen/width_text_score_time"
+        android:layout_height="@dimen/height_text_score_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="@string/text_time_bar"
+        android:textColor="@color/color_time_bar_text"
+        android:textSize="@dimen/size_time_bar_text" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="@dimen/width_text_score_time"
+        android:layout_height="@dimen/height_text_score_time"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time_text"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="85dp"
+        android:gravity="center"
+        android:text="@string/text_score"
+        android:textColor="@color/color_time_bar_text"
+        android:textSize="@dimen/size_time_bar_text" />
+
+    <ImageView
+        android:id="@+id/star_1"
+        android:layout_width="@dimen/size_star"
+        android:layout_height="@dimen/size_star"
+        android:layout_below="@+id/score_text"
+        android:layout_toLeftOf="@+id/star_2"
+        android:src="@drawable/level_complete_star"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/star_2"
+        android:layout_width="@dimen/size_star"
+        android:layout_height="@dimen/size_star"
+        android:layout_below="@+id/score_text"
+        android:layout_toLeftOf="@+id/star_3"
+        android:src="@drawable/level_complete_star"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/star_3"
+        android:layout_width="@dimen/size_star"
+        android:layout_height="@dimen/size_star"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/score_text"
+        android:layout_marginRight="53dp"
+        android:src="@drawable/level_complete_star"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/star_1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="100dp"
+        android:cursorVisible="false"
+        android:inputType="textCapWords"
+        android:maxLength="6"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_time_bar_text"
+
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/star_1"
+        android:background="@null"
+        android:text="save" />
+
+</RelativeLayout>

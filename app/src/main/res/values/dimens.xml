@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--theme-->
+    <dimen name="dimen_theme">16dp</dimen>
+    <!--time_bar-->
+    <dimen name="size_time_bar_text">22sp</dimen>
+    <dimen name="margin_time_bar_image">30dp</dimen>
+    <dimen name="margin_time_bar_text">44dp</dimen>
+    <!--popup_win-->
+    <dimen name="width_button">90dp</dimen>
+    <dimen name="height_button">75dp</dimen>
+    <dimen name="margin_bot_button">10dp</dimen>
+    <dimen name="margin_leftright_button">30dp</dimen>
+    <dimen name="size_star">55dp</dimen>
+    <dimen name="margin_top_star">30dp</dimen>
+    <dimen name="margin_left_star_1">20dp</dimen>
+    <dimen name="margin_left_star_2">83dp</dimen>
+    <dimen name="margin_left_star_3">146dp</dimen>
+    <dimen name="width_text_score_time">120dp</dimen>
+    <dimen name="height_text_score_time">50dp</dimen>
+    <!--menu_start-->
+    <dimen name="width_start_button">100dp</dimen>
+    <dimen name="margin_top_image_title">70dp</dimen>
+    <dimen name="width_setting_button">70dp</dimen>
+    <dimen name="height_image_title">310dp</dimen>
+    <!--difficult-->
+    <dimen name="difficulty_padding">40dp</dimen>
+    <dimen name="difficulty_margin">10dp</dimen>
+    <dimen name="size_text_difficult">17sp</dimen>
+    <dimen name="margin_back_card">1dp</dimen>
+</resources>

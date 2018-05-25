@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/image_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_top_image_title"
+        android:src="@drawable/title" />
+    <ImageView
+        android:id="@+id/img_bxh"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/image_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/button_bxh"
+    />
+
+    <ImageView
+        android:id="@+id/start_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/button_start" />
+
+    <ImageView
+        android:id="@+id/out_game_button"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/width_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_left_star_1"
+        android:layout_toRightOf="@+id/start_game_button"
+        android:src="@drawable/button_destroy" />
+
+    <CheckBox
+        android:id="@+id/music_button"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/width_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_left_star_1"
+        android:layout_toLeftOf="@+id/start_game_button"
+        android:button="@drawable/image_music" />
+
+</RelativeLayout>
