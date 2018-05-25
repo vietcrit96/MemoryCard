@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class HighScoreActivity extends AppCompatActivity {
     private TextView tvLastScore, tvNameBest1, tvNameBest2, tvNameBest3, tvScoreBest1, tvScoreBest2, tvScoreBest3;
     private ImageView imgBackScore;
-
+    private String lastScore= String.valueOf( 0 );
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -30,13 +30,11 @@ public class HighScoreActivity extends AppCompatActivity {
         int b3 = Integer.parseInt( tvScoreBest3.getText().toString() );
         String n1 = tvNameBest1.getText().toString();
         String n2 = tvNameBest2.getText().toString();
-        String n3 = tvNameBest3.getText().toString();
 
         Intent intent = getIntent();
         String name = intent.getStringExtra( WinView.NAME );
-        String lastScore = intent.getStringExtra( WinView.LASTSCORE );
+        lastScore = intent.getStringExtra( WinView.LASTSCORE );
         tvLastScore.setText( "Last Score : " + lastScore );
-        int b0 = Integer.parseInt( lastScore );
 
 
         if (b1 == 0) {
@@ -52,19 +50,19 @@ public class HighScoreActivity extends AppCompatActivity {
             tvScoreBest3.setText( lastScore );
         }
         if (b1 != 0 && b2 != 0 && b3 != 0) {
-            if (b0 > b3) {
+            if (Integer.parseInt( lastScore ) > b3) {
                 tvNameBest3.setText( name );
-                tvScoreBest3.setText( b0 );
+                tvScoreBest3.setText( Integer.parseInt( lastScore ) );
             }
-            if (b0 > b2) {
+            if (Integer.parseInt( lastScore ) > b2) {
                 tvNameBest2.setText( name );
-                tvScoreBest2.setText( b0 );
+                tvScoreBest2.setText(Integer.parseInt( lastScore ));
                 tvNameBest3.setText( n2 );
                 tvScoreBest3.setText( b2 );
             }
-            if (b0 > b1) {
+            if (Integer.parseInt( lastScore ) > b1) {
                 tvNameBest1.setText( name );
-                tvScoreBest1.setText( b0 );
+                tvScoreBest1.setText( Integer.parseInt( lastScore ) );
                 tvNameBest2.setText( n1 );
                 tvScoreBest2.setText( b1 );
                 tvNameBest3.setText( n2 );
