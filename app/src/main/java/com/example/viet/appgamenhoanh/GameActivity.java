@@ -17,7 +17,7 @@ import java.util.Locale;
 
 public class GameActivity extends AppCompatActivity {
     private TextView tvTimeBarText,tvScoreText;
-    private static final long START_TIME = 20000;
+    private static final long START_TIME = 120000;
     private long timeLeft = START_TIME;
 
     private ImageView iv_11, iv_12, iv_13, iv_14, iv_15, iv_16,
@@ -37,8 +37,6 @@ public class GameActivity extends AppCompatActivity {
     //array image
     Integer[] cardArrays = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
             101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121
-
-
     };
     int emoji1, emoji2, emoji3, emoji4, emoji5, emoji6, emoji7, emoji8, emoji9, emoji10,
             emoji11, emoji12, emoji13, emoji14, emoji15, emoji16, emoji17, emoji18, emoji19, emoji20, emoji21,

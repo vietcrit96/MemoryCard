@@ -64,7 +64,7 @@ board"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="0"
+            android:text="-"
             android:textColor="@color/black"
             android:textSize="@dimen/size_time_bar_text" />
 
@@ -92,7 +92,7 @@ board"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="0"
+            android:text="-"
             android:textColor="@color/black"
             android:textSize="@dimen/size_time_bar_text" />
 
@@ -120,7 +120,7 @@ board"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="0"
+            android:text="-"
             android:textColor="@color/black"
             android:textSize="@dimen/size_time_bar_text" />
 
